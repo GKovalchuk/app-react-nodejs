@@ -1,0 +1,61 @@
+.form_textarea-wrapper {
+	display: grid;
+	grid-template-columns: 122px minmax(213px, 300px);
+	width: 100%;
+	max-width: 422px;
+	height: fit-content;
+	margin-bottom: 7px;
+}
+
+.form_textarea {
+	height: 22px;
+	margin-bottom: 3px;
+	padding-bottom: 6px;
+	overflow: hidden;
+	border: none;
+	outline: transparent;
+	white-space: nowrap;
+	resize: none;
+}
+
+.form_textarea-error {
+	min-height: 50px;
+}
+
+.form_textarea-error .form_textarea {
+	border-bottom: 1px solid #f37575;
+	color: #f37575;
+}
+
+.form_textarea-error .form_textarea::placeholder {
+	color: #f37575;
+}
+
+.form_label-textarea {
+	display: flex;
+	align-items: center;
+	align-self: flex-start;
+	color: #8591a5;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.form_textarea-error .form_label-textarea {
+	grid-row: span 2;
+}
+
+.form_textarea:focus {
+	min-height: 100px;
+	overflow-y: auto;
+	border-bottom: 1px solid #4c8bf7;
+	outline: transparent;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+.form_textarea-error .form_textarea:focus {
+	border-bottom: 1px solid #f37575;
+}

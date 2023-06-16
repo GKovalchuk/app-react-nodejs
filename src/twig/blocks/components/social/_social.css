@@ -1,0 +1,19 @@
+.social_wrapper {
+	display: flex;
+	gap: 20px;
+}
+
+.social_wrapper a {
+	height: 40px;
+}
+
+.social_wrapper svg {
+	height: 100%;
+	fill: var(--White);
+}
+
+@media (width >= 768px) {
+	.social_wrapper {
+		padding-right: 20px;
+	}
+}

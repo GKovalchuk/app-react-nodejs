@@ -1,0 +1,23 @@
+.button-default {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	align-content: center;
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+	height: 36px;
+	border: 1px solid #4d85e6;
+	border-radius: 3px;
+	background: #4d85e6;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+@media (width >=768px) {
+	.button-default {
+		width: 156px;
+	}
+}

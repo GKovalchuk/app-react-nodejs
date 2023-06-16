@@ -1,0 +1,66 @@
+@import url('normalize.css');
+@import url('./_fonts.css');
+@import url('./_generic.css');
+@import url('./_variables.css');
+
+body {
+	display: block;
+	margin: 0;
+	background: var(--WildSand);
+	font-size: var(--font-size_text_m);
+}
+
+header {
+	display: grid;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--White);
+}
+
+.wrapper-scroll-area {
+	padding-top: 105px;
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+		"main"
+		"footer";
+	grid-template-rows:  1fr auto;
+	margin: 0;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	display: grid;
+	grid-area: footer;
+	background-color: var(--Firefly);
+}
+
+@media (width >=768px) {
+	.wrapper-scroll-area {
+			padding-top: 66px;
+			grid-template-rows:  1fr 100px;
+		}
+
+	header {
+		height: 66px;
+	}
+}
+
+@media (width >=1280px) {
+	.wrapper-scroll-area {
+		grid-template-areas: 
+				". main ."
+				"footer footer footer";
+			grid-template-columns: minmax(20px, auto) 1240px minmax(20px, auto);
+		}
+
+	main {
+		padding: 0;
+	}
+}

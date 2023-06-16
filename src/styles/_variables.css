@@ -1,0 +1,40 @@
+:root {
+	--breakepoint_desktop: 1280px;
+	--breakepoint_mobile: 375px;
+	--breakepoint_tablet: 768px;
+	--AthensGray: #e5e6e9;
+	--Black: #000;
+	--CornflowerBlue: #4c8bf7;
+	--Firefly: #10242d;
+	--Mercury: #e5e5e5;
+	--OuterSpace: #2e3640;
+	--PaleSky: #6e747a;
+	--RegentGray: #8591a5;
+	--Sail: #a1d5f6;
+	--SilverSand: #c6c7c9;
+	--White: #fff;
+	--WildSand: #f5f5f5;
+	--border-radius_m: 3px;
+	--font-family_main: "PT Sans";
+	--font-family_second: "Roboto";
+	--font-size_button_m: 16.84px;
+	--font-size_text_m: 15px;
+	--font-size_title_s: 18px;
+	--font-size_title_m: 24px;
+	--font-size_title_l: 30px;
+	--line-height_link_m: 130%;
+	--line-height_text_m: 150%;
+	--line-height_title_l: 120%;
+	--line-height_title_m: 150%;
+	--line-height_title_s: 150%;
+	--font-weigth_text_m: 400;
+	--font-weigth_title: 700;
+	--letter-spacing_title_l: 0.03em;
+	--text-transform_title_l: uppercase;
+}
+
+@media (width >=768px) {
+	:root {
+		--font-size_title_l: 36px;
+	}
+}

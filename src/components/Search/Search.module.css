@@ -1,0 +1,56 @@
+.form,
+.input,
+.input::placeholder {
+	border: none;
+	color: #8591a5;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.input {
+	width: 100%;
+	height: 100%;
+	padding-left: 6px;
+	vertical-align: middle;
+}
+
+.input_label {
+	display: none;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.input::placeholder {
+	transition: opacity 0.2s ease-in-out;
+	opacity: 1;
+}
+
+.input:focus::placeholder {
+	transition: opacity 0.2s ease-in-out;
+	opacity: 0;
+}
+
+.button {
+	width: 16px;
+	height: 16px;
+	background: url("/src/assets/images/_searchIcon.svg") no-repeat;
+	background-position: 50% 80%;
+	background-size: 16px;
+}
+
+@media (width >=768px) {
+	.form {
+		padding: 20px;
+	}
+}

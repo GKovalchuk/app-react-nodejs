@@ -1,0 +1,25 @@
+.select-button {
+	display: flex;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 10px;
+	border: none;
+	border-radius: 0 3px;
+	background-color: #fff;
+	font-weight: 700;
+
+}
+
+.select-button svg {
+	stroke: #4c88f7;
+	fill: none;
+}
+
+.select-button-selected svg {
+	fill: #4c88f7;
+}

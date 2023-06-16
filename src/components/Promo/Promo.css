@@ -1,0 +1,7 @@
+.promo-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,126 @@
+.form_select-wrapper {
+	display: grid;
+	grid-template-columns: 122px minmax(213px, 300px);
+	width: 100%;
+	max-width: 422px;
+	height: 25px;
+	margin-bottom: 7px;
+}
+
+.form_label-select {
+	display: flex;
+	align-items: center;
+	color: #8591a5;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+
+.form_select-error {
+	grid-template-rows: 25px 25px;
+	height: 25px;
+}
+
+.form_select-error .form_select {
+	border-bottom: 1px solid #f37575;
+	color: #f37575;
+}
+
+.form_select-error .form_select::placeholder {
+	color: #f37575;
+}
+
+.select-container .select__input-container {
+	margin: 0;
+	padding: 0;
+}
+
+.select-container .select__control {
+	width: fit-content;
+	height: 25px;
+	min-height: 19px;
+	border: none;
+	outline: none;
+	background: none;
+	box-shadow: none;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.select-container .select__value-container,
+.select-container .select__value-container--has-value {
+	margin: 0;
+	padding: 0;
+}
+
+.select-container .css-1fdsijx-ValueContainer,
+.select-container .css-1dimb5e-singleValue {
+	margin: 0;
+	padding: 0;
+}
+
+.select-container .select__menu {
+	top: 18px;
+	left: -25px;
+	width: 325px;
+	max-width: 325px;
+	height: fit-content;
+	max-height: 140px;
+	border: 1px solid #e5e6e9;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 2px 6px rgb(0 0 0 / 3%);
+}
+
+.select-container .select__menu-list {
+	padding: 0;
+}
+
+.select-container .select__option {
+	padding: 5px 24px 7px;
+	color: #2e3640;
+	line-height: 150%;
+}
+
+.select-container .select__option:active {
+	background-color: #e5e6e9;
+}
+
+.select-container .select__option--is-selected {
+	background-image: url("./SelectCheck.svg");
+	background-repeat: no-repeat;
+	background-position: 11px 50%;
+	background-size: 8px;
+}
+
+.select-container .select__option--is-focused,
+.select-container .select__option--is-selected {
+	background-color: #f5f5f5;
+	color: #2e3640;
+}
+
+.select-container .select__single-value {
+	max-width: min-content;
+}
+
+
+.select-container .select__indicator-separator {
+	display: none;
+}
+
+.select-container .select__dropdown-indicator {
+	height: 20px;
+	padding: 0;
+	color: #8591a5;
+}
+
+.select-container .select__dropdown-indicator svg {
+	width: 15px;
+	margin: auto 0;
+}

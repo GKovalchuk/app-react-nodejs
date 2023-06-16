@@ -1,0 +1,76 @@
+.form_radio-wrapper {
+	display: flex;
+	position: relative;
+	width: min-content;
+	max-width: 422px;
+	margin: 2px 0 12px;
+	padding: 0;
+	user-select: none;
+}
+
+.form_label-radio {
+	width: 310px;
+	margin-left: 24px;
+	overflow: hidden;
+	color: #2e3640;
+	font-family: 'PT Sans';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.form_radio {
+	position: absolute;
+	z-index: 1;
+	min-width: 100%;
+	min-height: 15px;
+	margin-right: 8px;
+	border-radius: 2px;
+	opacity: 0;
+	cursor: pointer
+}
+
+.form_radio:disabled {
+	cursor: auto;
+}
+
+.form_radio+label {
+	user-select: none;
+}
+
+.form_radio+label::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #8591a5;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.form_radio:checked+label::before {
+	background-image: url('./radio.svg');
+	background-size: 7px;
+}
+
+.form_radio:focus+label::before {
+	border-color: #4c8bf7;
+}
+
+.form_radio:disabled+label::before {
+	border: 1px solid #e8e8e8;
+	background-color: #f1f1f1;
+
+}
+
+.form_radio:disabled:checked+label::before {
+	background-image: url('./radio_disabled.svg');
+}

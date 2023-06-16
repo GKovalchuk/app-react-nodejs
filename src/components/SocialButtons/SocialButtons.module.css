@@ -1,0 +1,19 @@
+.wrapper {
+	display: flex;
+	gap: 20px;
+}
+
+.wrapper a {
+	height: 40px;
+}
+
+.wrapper svg {
+	height: 100%;
+	fill: var(--White);
+}
+
+@media (width >= 768px) {
+	.wrapper {
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,14 @@
+.likes_wrapper {
+	display: flex;
+	position: relative;
+	flex-wrap: nowrap;
+	color: inherit;
+	cursor: pointer;
+	gap: 6px;
+}
+
+.likes_wrapper svg {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}

@@ -1,0 +1,20 @@
+.switcher-line_button {
+	width: fit-content;
+	margin-right: 25px;
+	padding: 0 5px 6px;
+	color: #2e3640;
+}
+
+.switcher-line_button:last-child {
+	margin-right: 0;
+}
+
+.switcher-line_selected {
+	border-bottom: 3px solid #4c8bf7;
+}
+
+.switcher-line_wrapper {
+	width: 100%;
+	margin-bottom: 26px;
+	border-bottom: 1px solid #4c8bf7;
+}

@@ -1,0 +1,12 @@
+.views_wrapper {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 6px;
+}
+
+.views_wrapper svg {
+	width: 14px;
+	height: 9px;
+}

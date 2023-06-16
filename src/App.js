@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const App = () => {
+	return (
+		< div className="App" >
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ullam quidem molestiae harum fugiat odit ab placeat, nostrum optio tenetur consectetur blanditiis dolore recusandae dolorem asperiores corporis officia voluptate perferendis?
+		</div >
+	);
 }
 
 export default App;
