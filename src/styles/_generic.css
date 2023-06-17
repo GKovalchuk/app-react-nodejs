@@ -125,7 +125,8 @@ main {
 h1,
 h2,
 h3,
-p {
+p,
+textarea {
 	color: var(--OuterSpace);
 	font-family: var(--font-family_main);
 	font-style: normal;

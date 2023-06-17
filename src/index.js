@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './App';
+import LayoutRouter from './layout/LayoutRouter';
 import Header from './layout/Header/Header';
 import Footer from './layout/Footer/Footer';
+import MenuProvider from './contexts/MenuContext/MenuProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<>
-		<Header />
-
-		<div className="wrapper-scroll-area">
-			<App />
-			<Footer />
-		</div>
+		<MenuProvider>
+			<Header />
+			<div className="wrapper-scroll-area">
+				<LayoutRouter />
+				<Footer />
+			</div>
+		</MenuProvider>
 	</>
 
 );

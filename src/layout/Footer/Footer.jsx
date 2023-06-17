@@ -11,9 +11,15 @@ const Footer = () => {
 				</div>
 				<div className={styles.menu}>
 					<div className={styles.menu_wrapper}>
-						<a className={styles.menu_link} href="#">Правила</a>
-						<a className={styles.menu_link} href="#">Документы</a>
-						<a className={styles.menu_link} href="#">Политика конфиденциальности</a>
+						<a className={styles.menu_link} href="#">
+							Правила
+						</a>
+						<a className={styles.menu_link} href="#">
+							Документы
+						</a>
+						<a className={styles.menu_link} href="#">
+							Политика конфиденциальности
+						</a>
 					</div>
 				</div>
 				<div className={styles.logo}>

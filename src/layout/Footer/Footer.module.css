@@ -122,7 +122,6 @@
 	}
 
 	.social {
-		margin-right: -1px;
 		border-right: 1px solid var(--Black);
 	}
 }
