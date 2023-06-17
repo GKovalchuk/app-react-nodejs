@@ -1,4 +1,4 @@
-.menu_button {
+.menuButton{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -10,7 +10,7 @@
 	background-color: transparent;
 }
 
-.menu_button svg {
+.menuButton svg {
 	width: 19px;
 	height: 17px;
 	fill: var(--PaleSky);

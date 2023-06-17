@@ -41,32 +41,60 @@ header::after {
 
 .profile {
 	grid-area: profile;
-	min-width: 147px;
 	margin: auto;
 	margin-right: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: flex-end;
+	min-width: 147px;
+}
+
+.profile_name {
+	max-width: 100px;
+	padding-right: 10px;
+	overflow: hidden;
+	color: #8591a5;
+	color: var(--RegentGray);
+	font-size: var(--font-size_text_m);
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: text;
+}
+
+.profile_photo {
+	width: 40px;
+	min-width: 40px;
+	max-width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #c8daea;
+	background-position: center;
 }
 
 .button {
 	display: none;
 }
 
-.wrapper-with-menu {
+.wrapperWithMenu {
 	grid-template-areas: "logo profile menu"
 		"input input input";
-	grid-template-columns: 175px minmax(100px, 553px) 40px;
+	grid-template-columns: 175px minmax(135px, 553px) 40px;
 }
 
 
-.profile-with-menu {
+.profileWithMenu {
 	min-width: 80px;
 	margin-right: 20px;
 }
 
-.profile_name-with-menu {
+.profile_nameWithMenu {
 	display: none;
 }
 
-.button-with-menu {
+.buttonWithMenu {
 	display: flex;
 	grid-area: menu;
 	margin-right: 0;
@@ -97,17 +125,17 @@ header::after {
 		border-right: 1px solid var(--AthensGray);
 	}
 
-	.wrapper-with-menu {
+	.wrapperWithMenu {
 		grid-template-areas: "logo input profile menu";
 		grid-template-columns:
 			175px minmax(347px, 918px) minmax(167px, auto) 39px;
 	}
 
-	.profile-with-menu {
+	.profileWithMenu {
 		min-width: 147px;
 	}
 
-	.profile_name-with-menu {
+	.profile_nameWithMenu {
 		display: inline-block;
 	}
 
@@ -124,7 +152,7 @@ header::after {
 		min-width: 147px;
 	}
 
-	.profile-with-menu {
+	.profileWithMenu {
 		margin-right: 0;
 	}
 
