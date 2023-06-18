@@ -10,11 +10,12 @@ import Views from '../Views/Views';
 import Comments from '../Comments/Comments';
 import SelectButton from '../SelectButton/SelectButton';
 import Statistics from '../Statistics/Statistics';
+import ImageDefault from './cardImageDefault.png';
 
 const Card = ({
 	title = '',
 	pubDate = '',
-	image = '/src/assets/images/cardImageDefault.png',
+	image,
 	previewtext = '',
 	classes = [],
 	detailsLink = '/'
@@ -73,6 +74,21 @@ const Card = ({
 
 		);
 	}
+	const addImage = () => {
+		console.log(image);
+		if (image) {
+			return <img
+				src={image}
+				className={cn('')}
+				alt='card cover'
+			/>
+		}
+		return <img
+			src={ImageDefault}
+			className={cn('')}
+			alt='card cover'
+		/>
+	}
 
 	return (
 		<div className={cn('card', [...classes])} >
@@ -81,7 +97,11 @@ const Card = ({
 					<SubTitle text={title} ref={titleRef} />
 				</Link>
 				<SelectButton />
-				<Text text={previewtext} classes={textClassMod} ref={textRef} />
+				<Text
+					text={previewtext}
+					classes={textClassMod}
+					ref={textRef}
+				/>
 			</div>
 			<div className="card_footer">
 				<DateStamp timestamp={pubDate} classes={["card_footer_date"]} />
@@ -89,7 +109,7 @@ const Card = ({
 			</div>
 			<div className="card_image-wrapper">
 				<div className="card_image">
-					<img src={image} className={cn('')} />
+					{addImage()}
 				</div>
 			</div>
 

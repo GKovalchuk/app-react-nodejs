@@ -22,11 +22,15 @@
 		"react-scripts": "5.0.1",
 		"web-vitals": "^2.1.4"
 	},
+	"devDependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"stylelint": "stylelint \"src/**/*.css\" --fix"
 	},
+	"proxy": "http://localhost:1337",
 	"eslintConfig": {
 		"extends": [
 			"react-app",
