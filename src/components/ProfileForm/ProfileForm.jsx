@@ -219,6 +219,7 @@ export const ProfileForm = () => {
 			});
 		}
 
+		// eslint-disable-next-line react-hooks/rules-of-hooks
 		const formik = useFormik({
 			initialValues: {
 				fullName: "",

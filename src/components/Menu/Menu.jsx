@@ -11,6 +11,7 @@ const Menu = ({ titleText = 'Меню раздела', classes = [], }) => {
 	const { setIsMenu } = useContext(MenuContext);
 
 	useEffect(() => {
+		setIsMenu(true);
 		const menuButton = document.getElementById('menuButton');
 		menuButton.addEventListener('click', toggleMenu);
 
@@ -24,8 +25,6 @@ const Menu = ({ titleText = 'Меню раздела', classes = [], }) => {
 	const toggleMenu = () => {
 		setClassActive(!classActive);
 	}
-
-	setIsMenu(true);
 
 	return (
 		<div id='pageMenu'>
