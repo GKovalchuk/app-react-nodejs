@@ -1,4 +1,4 @@
-.views_wrapper {
+.wrapper {
 	display: flex;
 	position: relative;
 	flex-wrap: wrap;
@@ -6,7 +6,7 @@
 	gap: 6px;
 }
 
-.views_wrapper svg {
+.wrapper svg {
 	width: 14px;
 	height: 9px;
 }

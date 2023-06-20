@@ -11,8 +11,10 @@ root.render(
 	<>
 		<MenuProvider>
 			<Header />
-			<div className="wrapper-scroll-area">
-				<LayoutRouter />
+			<div className="wrapperScrollArea">
+				<main>
+					<LayoutRouter />
+				</main>
 				<Footer />
 			</div>
 		</MenuProvider>

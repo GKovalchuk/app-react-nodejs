@@ -1,39 +1,31 @@
-import './Promo.css';
+import styles from './Promo.module.css';
 import React from 'react';
 import Card from '../Card/Card';
 
 const Promo = (props) => {
-	const promoListData = props.promoList;
-	const promoList = [];
-
-
-	promoListData.map((promo) => {
+	const { promoListData } = props;
+	const promoList = promoListData.map((promo) => {
 		const detailsLink = `/promotions/${promo.id}`;
-		if (promo.id > 5) {
-			return;
-		}
-		const classes = ['wide_card'];
+		let [isWideCard, isEvenWideCard] = [true, false];
 		if (promo.id % 2 === 0) {
-			classes.push('wide_card-even');
+			isEvenWideCard = true;
 		}
-		promoList.push(
-			<Card
-				key={promo.id}
-				title={promo.title}
-				pubDate={promo.pubDate}
-				image={promo.image}
-				previewtext={promo.previewtext}
-				classes={classes}
-				detailsLink={detailsLink}
-			/>);
-		return;
+		return <Card
+			key={promo.id}
+			title={promo.title}
+			pubDate={promo.pubDate}
+			image={promo.image}
+			previewtext={promo.previewtext}
+			isWideCard={isWideCard}
+			isEvenWideCard={isEvenWideCard}
+			detailsLink={detailsLink}
+		/>;
 	});
 
 	return (
-		<div className='promo-wrapper'>
+		<div className={styles.wrapper}>
 			{promoList}
 		</div>
-
 	);
 }
 

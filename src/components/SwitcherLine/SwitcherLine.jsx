@@ -1,4 +1,4 @@
-import './SwitcherLine.css'
+import styles from './SwitcherLine.module.css';
 import React from 'react';
 import cn from 'classnames';
 
@@ -17,8 +17,8 @@ const SwitcherLine = ({
 					key={text}
 					type='button'
 					onClick={() => { switchTabs({ text, link }) }}
-					className={cn('switcher-line_button', [...classes], {
-						'switcher-line_selected': text === selected.text
+					className={cn(styles.button, [...classes], {
+						[styles.selected]: text === selected.text
 					})}
 				>
 					{text}
@@ -28,7 +28,7 @@ const SwitcherLine = ({
 	}
 
 	return (
-		<div className="switcher-line_wrapper">
+		<div className={styles.wrapper}>
 			{buildButtons()}
 		</div>
 	);

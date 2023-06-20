@@ -1,4 +1,4 @@
-.select-button {
+.button {
 	display: flex;
 	position: absolute;
 	z-index: 0;
@@ -15,11 +15,11 @@
 
 }
 
-.select-button svg {
+.button svg {
 	stroke: #4c88f7;
 	fill: none;
 }
 
-.select-button-selected svg {
+.buttonSelected svg {
 	fill: #4c88f7;
 }

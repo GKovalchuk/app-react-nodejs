@@ -1,36 +1,36 @@
-.main-header_wrapper {
+.wrapper {
 	width: 100%;
 	min-width: 335px;
 	margin-bottom: 35px;
 }
 
-.main-header_title {
+.title {
 	width: 100%;
 	margin-bottom: 10px;
 }
 
-.main-header_title b {
+.title b {
 	color: #4c8bf7;
 }
 
-.main-header_text {
+.text {
 	display: inline;
 }
 
 
 @media (width >= 768px) {
-	.main-header_wrapper {
+	.wrapper {
 		width: 450px;
 		margin-bottom: 45px;
 	}
 
-	.main-header_title {
+	.title {
 		margin-bottom: 20px;
 	}
 }
 
 @media (width >= 1280px) {
-	.main-header_wrapper {
+	.wrapper {
 		margin-bottom: 65px;
 	}
 }

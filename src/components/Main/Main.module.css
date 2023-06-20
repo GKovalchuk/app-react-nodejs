@@ -1,15 +1,15 @@
-.main_wrapper {
+.wrapper {
 	margin: 30px 20px 40px;
 }
 
 @media (width >=768px) {
-	.main_wrapper {
+	.wrapper {
 		margin: 40px 20px 50px;
 	}
 }
 
 @media (width >=1280px) {
-	.main_wrapper {
+	.wrapper {
 		margin: 60px 0 70px;
 	}
 }
