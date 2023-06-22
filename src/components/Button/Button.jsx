@@ -1,14 +1,19 @@
-import './Button.css'
 import React from 'react';
 import cn from 'classnames';
+import styles from './Button.module.css';
 
-const Button = ({ text, doSmth, type = 'button', classes = [] }) => {
+const Button = ({
+	text,
+	doSmth,
+	type = 'button',
+	classes = []
+}) => {
 
 	return (
 		<button
 			type={type}
 			onClick={doSmth}
-			className={cn('button-default', [...classes])}
+			className={cn(styles.default, [...classes])}
 		>
 			{text}
 		</button>

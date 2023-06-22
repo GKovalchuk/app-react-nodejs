@@ -1,4 +1,4 @@
-.button-default {
+.default {
 	display: flex;
 	box-sizing: border-box;
 	flex-wrap: wrap;
@@ -17,7 +17,7 @@
 }
 
 @media (width >=768px) {
-	.button-default {
+	.default {
 		width: 156px;
 	}
 }

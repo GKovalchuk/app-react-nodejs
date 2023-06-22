@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import './Article.css';
+import styles from './Article.module.css';
 import DateStamp from '../DateStamp/DateStamp';
 import Title from '../Title/Title';
 
@@ -14,14 +14,10 @@ export const Article = (props) => {
 	}, [fulltext])
 
 	return (
-		<article className="article_wrapper">
-			<DateStamp
-				classes={['article-date']}
-				timestamp={pubDate}
-				format={'dd MMMM yyyy'}
-			/>
-			<Title classes={['article-title']} text={title} />
-			<div className='article-text' ref={articleRef}></div>
+		<article className={styles.wrapper}>
+			<DateStamp timestamp={pubDate} format={'dd MMMM yyyy'} />
+			<Title classes={[styles.title]} text={title} />
+			<div className={styles.text} ref={articleRef}></div>
 		</article>
 	);
 }

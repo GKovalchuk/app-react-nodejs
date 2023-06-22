@@ -1,4 +1,4 @@
-.comments_wrapper {
+.wrapper {
 	display: flex;
 	position: relative;
 	flex-wrap: nowrap;
@@ -7,7 +7,7 @@
 	gap: 6px;
 }
 
-.comments_wrapper svg {
+.wrapper svg {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);

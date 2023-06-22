@@ -1,7 +1,7 @@
-import './Card.css'
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
+import styles from './Card.module.css';
 import SubTitle from '../SubTitle/SubTitle';
 import Text from '../Text/Text'
 import DateStamp from '../DateStamp/DateStamp';
@@ -17,6 +17,9 @@ const Card = ({
 	pubDate = '',
 	image,
 	previewtext = '',
+	isThirdCard,
+	isWideCard,
+	isEvenWideCard,
 	classes = [],
 	detailsLink = '/'
 }) => {
@@ -29,8 +32,11 @@ const Card = ({
 		let cardTitleElemH = titleRef.current.offsetHeight;
 
 		const setNewClass = () => {
-			let numOfStr = Math.floor((116 - cardTitleElemH) / 22.5)
-			let newClass = `numOfStr-${numOfStr}`;
+			const strCounter = Math.floor((116 - cardTitleElemH) / 22.5);
+			let newClass = styles.fourLinesText;
+			if (strCounter === 3) newClass = styles.threeLinesText;
+			if (strCounter === 2) newClass = styles.twoLinesText;
+			if (strCounter === 1) newClass = styles.oneLineText;
 			setTextClassMod([newClass]);
 		}
 
@@ -50,13 +56,19 @@ const Card = ({
 		})
 	}, []);
 
+	const buildClasses = () => {
+		if (isThirdCard) classes.push(styles.newsThird);
+		if (isWideCard) classes.push(styles.wideCard);
+		if (isEvenWideCard) classes.push(styles.wideCardEven);
+	}
+
 	const buildFooter = () => {
-		if (classes.includes('wide_card')) {
+		if (classes.includes(styles.wideCard)) {
 			return (
 				<>
 					<Text
 						text={FOOTER_PROMO_TEXT.text}
-						classes={['card_footer__text']}
+						classes={[styles.footerText, styles.textWrapper]}
 					/>
 					<Statistics>
 						<Likes likes={123} />
@@ -71,48 +83,40 @@ const Card = ({
 				<Comments comments={55} />
 				<Views views={300} />
 			</Statistics>
-
 		);
 	}
+
 	const addImage = () => {
-		console.log(image);
 		if (image) {
-			return <img
-				src={image}
-				className={cn('')}
-				alt='card cover'
-			/>
+			return <img src={image} alt='card cover' />
 		}
-		return <img
-			src={ImageDefault}
-			className={cn('')}
-			alt='card cover'
-		/>
+		return <img src={ImageDefault} alt='card cover' />
 	}
 
+	buildClasses();
+
 	return (
-		<div className={cn('card', [...classes])} >
-			<div className="card_content">
+		<div className={cn(styles.card, [...classes])} >
+			<div className={styles.content}>
 				<Link to={detailsLink}>
 					<SubTitle text={title} ref={titleRef} />
 				</Link>
 				<SelectButton />
 				<Text
 					text={previewtext}
-					classes={textClassMod}
+					classes={[textClassMod, styles.textWrapper]}
 					ref={textRef}
 				/>
 			</div>
-			<div className="card_footer">
-				<DateStamp timestamp={pubDate} classes={["card_footer_date"]} />
+			<div className={styles.footer}>
+				<DateStamp timestamp={pubDate} classes={[styles.footerDate]} />
 				{buildFooter()}
 			</div>
-			<div className="card_image-wrapper">
-				<div className="card_image">
+			<div className={styles.imageWrapper}>
+				<div className={styles.image}>
 					{addImage()}
 				</div>
 			</div>
-
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-.details_wrapper {
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -7,20 +7,20 @@
 	height: fit-content;
 }
 
-.details_title {
+.title {
 	margin: 0 18px 20px 20px;
 }
 
 @media (width >=1280px) {
-	.details_wrapper {
+	.wrapper {
 		width: 922px;
 	}
 
-	.details_title {
+	.title {
 		margin: 0 0 20px;
 	}
 
-	.details_article {
+	.article {
 		max-width: 922px;
 	}
 }

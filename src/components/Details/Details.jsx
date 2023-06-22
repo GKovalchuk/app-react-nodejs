@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import './Details.css';
+import styles from './Details.module.css';
 import useJsonFetch from '../hooks/useJsonFetch';
 import Article from '../Article/Article';
 import PageTitle from '../PageTitle/PageTitle';
@@ -10,7 +10,7 @@ export const Details = () => {
 	const URL = 'http://localhost:3000/';
 	const PAGE_TITLE = {
 		text: 'Заголовок страницы',
-		classes: ['details_title'],
+		classes: [styles.title],
 	};
 	const location = useLocation();
 	const address = String(location.pathname).slice(1);
@@ -26,7 +26,6 @@ export const Details = () => {
 		if (data) {
 			setNewData();
 		}
-
 	}, [data, error]);
 
 	const buildDetailsContent = () => {
@@ -42,7 +41,7 @@ export const Details = () => {
 						text={PAGE_TITLE.text}
 						classes={PAGE_TITLE.classes}
 					/>
-					<div className="details_article">
+					<div className={styles.article}>
 						<Article data={detailData} />
 					</div>
 				</>
@@ -51,7 +50,7 @@ export const Details = () => {
 	}
 
 	return (
-		<div className="details_wrapper">
+		<div className={styles.wrapper}>
 			{buildDetailsContent()}
 		</div>
 	);

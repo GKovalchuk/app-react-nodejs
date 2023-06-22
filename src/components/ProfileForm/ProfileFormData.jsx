@@ -1,6 +1,5 @@
 export const PAGE_TITLE = {
 	text: 'Редактировать профиль',
-	classes: ['profile-form_title'],
 };
 export const GENERAL_INPUTS = [
 	{
@@ -153,13 +152,11 @@ export const BUTTON_SAVE =
 {
 	text: 'Сохранить',
 	type: 'submit',
-	classes: ['fullName'],
 	doSmth: () => { }
 };
 export const BUTTON_REJECT =
 {
 	text: 'Отмена',
 	type: 'reset',
-	classes: ['fullName'],
 	doSmth: () => { }
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import './Page.css';
+import styles from './Page.module.css';
 import Menu from '../Menu/Menu';
 
 const Page = () => {
 	return (
-		<div className="page_wrapper">
+		<div className={styles.wrapper}>
 			<Menu classes={[]} />
 			<Outlet />
 		</div>

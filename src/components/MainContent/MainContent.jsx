@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './MainContent.css';
+import styles from './MainContent.module.css';
 import News from '../News/News';
 import Promo from '../Promo/Promo';
 import SwitcherLine from '../SwitcherLine/SwitcherLine';
@@ -33,6 +33,7 @@ const MainContent = () => {
 		}
 
 		fetchDataList();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 
 	const switchTabs = (newTab) => {
@@ -63,18 +64,18 @@ const MainContent = () => {
 			let clippedDataList = dataList.slice(0, endOfList);
 			if (selected.text === 'Акции') {
 				return (
-					<Promo promoList={clippedDataList} />
+					<Promo promoListData={clippedDataList} />
 				);
 			}
 			return (
-				<News newsList={clippedDataList} />
+				<News newsListData={clippedDataList} />
 			);
 		}
 
 	}
 
 	return (
-		<div className='main-content-wrapper'>
+		<div className={styles.wrapper}>
 			<SwitcherLine
 				buttonList={BUTTON_LIST}
 				selected={selected}

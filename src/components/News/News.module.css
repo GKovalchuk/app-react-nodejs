@@ -1,4 +1,4 @@
-.news-wrapper {
+.wrapper {
 	display: grid;
 	grid-auto-flow: row dense;
 	grid-template-columns: 1fr;
@@ -9,17 +9,13 @@
 
 
 @media (width >= 768px) {
-	.news-wrapper {
+	.wrapper {
 		grid-template-columns: 1fr 1fr;
-	}
-
-	.card-news-third {
-		grid-column: span 2;
 	}
 }
 
 @media (width >= 1280px) {
-	.news-wrapper {
+	.wrapper {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
