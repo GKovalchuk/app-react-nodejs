@@ -30,7 +30,6 @@
 		"build": "react-scripts build",
 		"stylelint": "stylelint \"src/**/*.css\" --fix"
 	},
-	"proxy": "https://app-react-nodejs-backend.vercel.app",
 	"eslintConfig": {
 		"extends": [
 			"react-app",
