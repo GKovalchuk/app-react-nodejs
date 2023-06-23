@@ -1,5 +1,5 @@
-.profile-form_wrapper,
-.profile-form {
+.wrapper,
+.form {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -10,12 +10,12 @@
 	overflow: auto;
 }
 
-.profile-form {
+.form {
 	padding: 30px 20px 20px;
 	background-color: #fff;
 }
 
-.form_span {
+.formSpan {
 	content: ' ';
 	position: relative;
 	width: 100%;
@@ -24,27 +24,27 @@
 	background-color: #e5e6e9;
 }
 
-.form_subtitle {
+.formSubtitle {
 	max-width: 422px;
 	margin-bottom: 8px;
 }
 
-.profile-form_title {
+.title {
 	margin: 0 20px 20px;
 }
 
-.form_error {
+.formError {
 	color: #f37575;
 }
 
-.profile-form_button-wrapper {
+.buttonWrapper {
 	display: flex;
 	gap: 15px;
 	margin-top: 5px;
 }
 
-.profile-form_button-save,
-.profile-form_button-reject {
+.buttonSave,
+.buttonReject {
 	width: 86px;
 	height: 36px;
 	border: 1px solid #4077d6;
@@ -53,7 +53,7 @@
 	font-size: 14px;
 }
 
-.profile-form_button-reject {
+.buttonReject {
 	width: fit-content;
 	height: fit-content;
 	border: none;
@@ -63,34 +63,34 @@
 }
 
 @media (width >=768px) {
-	.profile-form {
+	.form {
 		padding: 40px 20px 20px;
 	}
 
-	.form_span {
+	.formSpan {
 		margin: 25px 0;
 	}
 
-	.profile-form_button-wrapper {
+	.buttonWrapper {
 		margin-top: -5px;
 	}
 
 }
 
 @media (width >=1280px) {
-	.profile-form_wrapper {
+	.wrapper {
 		width: 922px;
 	}
 
-	.profile-form {
+	.from {
 		padding: 40px 30px 20px;
 	}
 
-	.profile-form_title {
+	.title {
 		margin: 0 0 20px;
 	}
 
-	.profile-form_article {
+	.article {
 		max-width: 922px;
 	}
 }

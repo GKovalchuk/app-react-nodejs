@@ -5,8 +5,10 @@ const Title = (props) => {
 	const { text, classes = [] } = props;
 
 	return (
-		<div className={cn("title_wrapper", [...classes])}>
-			<h2>{text}</h2>
+		<div className={cn([...classes])}>
+			<h2>
+				{text}
+			</h2>
 		</div>
 	);
 };

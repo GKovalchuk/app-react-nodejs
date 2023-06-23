@@ -9,7 +9,7 @@ import {
 	BUTTON_SAVE,
 	BUTTON_REJECT,
 } from './ProfileFormData';
-import './ProfileForm.css';
+import styles from './ProfileForm.module.css';
 import PageTitle from '../PageTitle/PageTitle';
 import CommonInput from '../../ui/CommonInput/CommonInput';
 import SelectInput from '../../ui/SelectInput/SelectInput';
@@ -52,7 +52,7 @@ export const ProfileForm = () => {
 		const getNotValidFields = (name) => {
 			if (formik.errors[name] && formik.touched[name]) {
 				return (
-					<div className='form_error'>
+					<div className={styles.formError}>
 						{formik.errors[name]}
 					</div>
 				);
@@ -268,40 +268,40 @@ export const ProfileForm = () => {
 
 		return (
 			<form
-				className='profile-form'
+				className={styles.form}
 				onSubmit={formik.handleSubmit}
 				onReset={resetForm}
 			>
-				<Title text={'Общее'} classes={['form_subtitle']} />
+				<Title text={'Общее'} classes={[styles.formSubtitle]} />
 				{buildInputs(GENERAL_INPUTS)}
-				<span className='form_span' />
-				<Title text={'Контакты'} classes={['form_subtitle']} />
+				<span className={styles.formSpan} />
+				<Title text={'Контакты'} classes={[styles.formSubtitle]} />
 				{buildInputs(CONTACT_INPUTS)}
-				<span className='form_span' />
+				<span className={styles.formSpan} />
 				<Title
 					text={'Мое мнение о чекбоксах'}
-					classes={['form_subtitle']}
+					classes={[styles.formSubtitle]}
 				/>
 				{buildInputs(CHECKBOX_OPINION)}
-				<span className='form_span' />
+				<span className={styles.formSpan} />
 				<Title
 					text={'Мое мнение о радио-кнопках'}
-					classes={['form_subtitle']}
+					classes={[styles.formSubtitle]}
 				/>
 				{buildInputs(RADIO_OPINION)}
-				<span className='form_span' />
-				<div className="profile-form_button-wrapper">
+				<span className={styles.formSpan} />
+				<div className={styles.buttonWrapper}>
 					<Button
 						text={BUTTON_SAVE.text}
 						doSmth={BUTTON_SAVE.doSmth}
 						type={BUTTON_SAVE.type}
-						classes={['profile-form_button-save']}
+						classes={[styles.buttonSave]}
 					/>
 					<Button
 						text={BUTTON_REJECT.text}
 						doSmth={BUTTON_REJECT.doSmth}
 						type={BUTTON_REJECT.type}
-						classes={['profile-form_button-reject']}
+						classes={[styles.buttonReject]}
 					/>
 				</div>
 			</form>
@@ -309,10 +309,10 @@ export const ProfileForm = () => {
 	};
 
 	return (
-		<div className="profile-form_wrapper">
+		<div className={styles.wrapper}>
 			<PageTitle
 				text={PAGE_TITLE.text}
-				classes={PAGE_TITLE.classes}
+				classes={[styles.title]}
 			/>
 			<Formik>
 				{profileForm()}

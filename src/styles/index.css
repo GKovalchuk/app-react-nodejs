@@ -20,7 +20,7 @@ header {
 	background-color: var(--White);
 }
 
-.wrapper-scroll-area {
+.wrapperScrollArea {
 	padding-top: 105px;
 	height: 100vh;
 	display: grid;
@@ -42,7 +42,7 @@ footer {
 }
 
 @media (width >=768px) {
-	.wrapper-scroll-area {
+	.wrapperScrollArea {
 			padding-top: 66px;
 			grid-template-rows:  1fr 100px;
 		}
@@ -53,7 +53,7 @@ footer {
 }
 
 @media (width >=1280px) {
-	.wrapper-scroll-area {
+	.wrapperScrollArea {
 		grid-template-areas: 
 				". main ."
 				"footer footer footer";

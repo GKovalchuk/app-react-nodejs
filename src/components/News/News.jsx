@@ -1,33 +1,29 @@
 import React from 'react';
-import './News.css';
+import styles from './News.module.css';
 import Card from '../Card/Card';
 
 const News = (props) => {
-	const newsListData = props.newsList;
-	const newsList = [];
-
-	newsListData.map((news) => {
+	const { newsListData } = props;
+	const newsList = newsListData.map((news) => {
 		const detailsLink = `/news/${news.id}`;
-		const classes = [];
+		let isThirdCard = false;
 		if (news.id % 3 === 0) {
-			classes.push('card-news-third');
+			isThirdCard = true;
 		}
-		newsList.push(
-			<Card
-				key={news.id}
-				title={news.title}
-				pubDate={news.pubDate}
-				image={news.image}
-				previewtext={news.previewtext}
-				fulltext={news.fulltext}
-				classes={classes}
-				detailsLink={detailsLink}
-			/>);
-		return;
+		return <Card
+			key={news.id}
+			title={news.title}
+			pubDate={news.pubDate}
+			image={news.image}
+			previewtext={news.previewtext}
+			fulltext={news.fulltext}
+			isThirdCard={isThirdCard}
+			detailsLink={detailsLink}
+		/>;
 	});
 
 	return (
-		<div className='news-wrapper'>
+		<div className={styles.wrapper}>
 			{newsList}
 		</div>
 

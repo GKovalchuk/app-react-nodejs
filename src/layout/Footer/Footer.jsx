@@ -10,14 +10,14 @@ const Footer = () => {
 					<SocialButtons />
 				</div>
 				<div className={styles.menu}>
-					<div className={styles.menu_wrapper}>
-						<a className={styles.menu_link} href="#">
+					<div className={styles.menuWrapper}>
+						<a className={styles.menuLink} href="#">
 							Правила
 						</a>
-						<a className={styles.menu_link} href="#">
+						<a className={styles.menuLink} href="#">
 							Документы
 						</a>
-						<a className={styles.menu_link} href="#">
+						<a className={styles.menuLink} href="#">
 							Политика конфиденциальности
 						</a>
 					</div>

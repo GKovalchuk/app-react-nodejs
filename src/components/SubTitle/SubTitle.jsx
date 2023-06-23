@@ -6,7 +6,7 @@ const SubTitle = forwardRef((props, ref) => {
 	const { text, classes = [] } = props;
 
 	return (
-		<div ref={ref} className={cn("title_wrapper", [...classes])}>
+		<div ref={ref} className={cn([...classes])}>
 			<h3>{text}</h3>
 		</div>
 	);

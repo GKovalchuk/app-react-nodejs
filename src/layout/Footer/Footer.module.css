@@ -45,14 +45,14 @@
 	padding: 10px 0 8px;
 }
 
-.menu_wrapper {
+.menuWrapper {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 
 
-.menu_link {
+.menuLink {
 	margin: 10px 0;
 	color: var(--White);
 	text-align: center;
@@ -89,13 +89,13 @@
 		padding: 0;
 	}
 
-	.menu_wrapper {
+	.menuWrapper {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		gap: 30px;
 	}
 
-	.menu_link {
+	.menuLink {
 		margin: 0;
 	}
 

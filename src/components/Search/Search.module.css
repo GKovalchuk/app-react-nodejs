@@ -44,7 +44,7 @@
 .button {
 	width: 16px;
 	height: 16px;
-	background: url("/src/assets/images/searchIcon.svg") no-repeat;
+	background: url("./searchIcon.svg") no-repeat;
 	background-position: 50% 80%;
 	background-size: 16px;
 }
