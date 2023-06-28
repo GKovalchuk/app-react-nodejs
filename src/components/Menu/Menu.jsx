@@ -51,19 +51,19 @@ const Menu = ({ titleText = 'Меню раздела', classes = [], }) => {
 				<nav className={styles.nav} role='navigation'>
 					<ul>
 						<li>
-							<Link to='/'>Избранное</Link>
+							<Link to='/'>Главная</Link>
 						</li>
 						<li>
-							<Link to='/news/1'>Моя компания</Link>
+							<Link to='/news/1'>Новость детально</Link>
 						</li>
 						<li>
-							<Link to='/promotions/1'>Моё развитие</Link>
+							<Link to='/promotions/1'>Акция детально</Link>
 						</li>
 						<li>
-							<Link to='/profile'>Новости компании</Link>
+							<Link to='/profile'>Форма редактирования профиля</Link>
 						</li>
 						<li>
-							<Link to='/' >Телефонная книга</Link>
+							<Link to='/'>Главная</Link>
 						</li>
 					</ul>
 				</nav>

@@ -7,7 +7,7 @@ import PageTitle from '../PageTitle/PageTitle';
 import Error404 from '../Error404/Error404';
 
 export const Details = () => {
-	const URL = 'https://app-react-nodejs-backend.vercel.app/';
+	const URL = 'http://localhost:3000/';
 	const PAGE_TITLE = {
 		text: 'Заголовок страницы',
 		classes: [styles.title],
