@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 import useJsonFetch from '../hooks/useJsonFetch';
 
 const MainContent = () => {
-	const URL = 'http://localhost:3000/';
+	const URL = 'https://app-react-nodejs-backend.vercel.app/';
 	const BUTTON_LIST = [
 		{ text: 'Новости', link: 'news' },
 		{ text: 'Акции', link: 'promotions' }
